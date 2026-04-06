@@ -2,17 +2,16 @@
 import streamlit as st
 import pandas as pd 
 
+import os
+import streamlit as st
 
-#load the cleaned dataset
 from pathlib import Path
 import pandas as pd
 
-file_path = Path("Data") / "Cleaned_Sales_data.xlsx"
+file_path = Path(__file__).parent / "Data" / "Cleaned_Sales_data.xlsx"
 data = pd.read_excel(file_path)
 
-# CLEAN + DEBUG
-#data.columns = data.columns.str.strip()
-#st.write("Columns:", data.columns)
+
 
 # Set the title of the app and cetralize it
 st.markdown("<h1 style='text-align: center; color: black;'>Sales Data Analysis Dashboard for CityMart</h1>", unsafe_allow_html=True)
