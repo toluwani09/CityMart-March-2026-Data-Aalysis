@@ -4,7 +4,11 @@ import pandas as pd
 
 
 #load the cleaned dataset
-data = pd.read_excel('../Data/Cleaned_Sales_data.xlsx')
+from pathlib import Path
+import pandas as pd
+
+file_path = Path("Data") / "Cleaned_Sales_data.xlsx"
+data = pd.read_excel(file_path)
 
 # CLEAN + DEBUG
 #data.columns = data.columns.str.strip()

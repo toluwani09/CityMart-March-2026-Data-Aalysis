@@ -4,7 +4,7 @@ import pandas as pd
 
 
 #load the cleaned dataset
-data = pd.read_excel('Data/Cleaned_Sales_data.xlsx')
+data = pd.read_excel('../Data/Cleaned_Sales_data.xlsx')
 
 # CLEAN + DEBUG
 #data.columns = data.columns.str.strip()
